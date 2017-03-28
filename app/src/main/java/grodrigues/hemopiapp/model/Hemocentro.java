@@ -15,9 +15,18 @@ public class Hemocentro {
 
     private int qtdBolsas;
 
+    private  RegistroDoadores doador;
+
+    private  List<RegistroDoadores> doadores;
 
 
-    private  List<RegistroDoadores> Doadores;
+
+    public Hemocentro(){
+
+    }
+    public Hemocentro(String nome,Date dataDoacao,int qtdBolsas){
+            this.nome = nome; this.dataDoacao = dataDoacao; this.qtdBolsas = qtdBolsas;
+    }
 
 
     public String getNome() {
